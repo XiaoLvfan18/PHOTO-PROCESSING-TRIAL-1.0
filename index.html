@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>图片合并工具</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>图片合并工具</h1>
+        
+        <!-- 新增：文明提示 -->
+        <div class="notice">
+            <p>请文明使用该网站,绿色上网,从你我做起</p>
+        </div>
+        
+        <!-- 上传区域 -->
+        <div class="upload-box" id="dropZone">
+            <p>拖拽图片到这里，或点击上传</p>
+            <input type="file" id="fileInput" accept="image/*" multiple>
+        </div>
+        
+        <!-- 图片预览区 -->
+        <div class="preview" id="preview"></div>
+        
+        <!-- 画布（用于合并图片） -->
+        <canvas id="mergedCanvas"></canvas>
+        
+        <!-- 操作区 -->
+        <div class="controls">
+            <label class="checkbox">
+                <input type="checkbox" id="invertColors"> 颜色反转
+            </label>
+            <button id="downloadBtn" disabled>下载合并图片</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
